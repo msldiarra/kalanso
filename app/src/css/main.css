@@ -1,0 +1,52 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto);
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+}
+
+.logo { font-size: 35px !important;}
+
+.navbar {margin:0 !important;}
+.navbar-inverse {
+    background-color: #484c58 !important;
+    border-color: #484c58 !important;
+    height: 60px;
+}
+
+.alert { padding: 7px 15px; }
+.alert-success {
+    color: #fff;
+    background-color: #4CAF50;
+    border-color: #4CAF50;
+}
+
+.hidden {visibility: hidden;}
+
+.form-title {font-size: 20px;}
+.input-group { margin-bottom: 30px !important;}
+.margin-top-30 {margin-top: 30px ;}
+.margin-bottom-30 {margin-bottom: 30px ;}
+.margin-bottom-20 {margin-bottom: 20px ;}
+
+.col-md-4, .container-fluid {padding:0 !important;}
+.content {
+    margin:0;
+    box-shadow: -1px 0 5px -2px rgba(0, 0, 0, 0.7);
+    height: 750px;
+}
+.components {height: 750px; background-color: #CFD8DC}
+
+.btn-primary {
+    color: #fff;
+    background-color: #4CAF50;
+    border-color: #4CAF50;
+}
+
+.btn {min-width: 80px; min-height: 36px;}
+.btn-primary:hover {background-color: #66BB6A;}
+
+.card {height: 270px; background-color: #fff; margin:5px 3px 0 0; background-color: #3E2723;padding:0;}
+.card .top {height: 75%;}
+.card .card-name {height: 25%;background-color: #fff;width: 100%;margin:0;padding:5px;}
+
