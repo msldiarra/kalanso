@@ -5,6 +5,7 @@ var gulp = require('gulp'),
     less = require('gulp-less'),
     sourcemaps = require('gulp-sourcemaps'),
     concat = require('gulp-concat'),
+    jest = require('gulp-jest');
     port = process.env.port || 3031;
 
 gulp.task('browserify', function() {
@@ -61,3 +62,23 @@ gulp.task('watch', function() {
 gulp.task('default', ['browserify']);
 
 gulp.task('serve', ['browserify', 'connect', 'open', 'watch']);
+
+
+gulp.task('jest', function () {
+    return gulp.src('__tests__').pipe(jest({
+        scriptPreprocessor: "./spec/support/preprocessor.js",
+        unmockedModulePathPatterns: [
+            "node_modules/react"
+        ],
+
+        testPathIgnorePatterns: [
+            "node_modules",
+            "spec/support"
+        ],
+        moduleFileExtensions: [
+            "js",
+            "json",
+            "react"
+        ]
+    }));
+});
