@@ -82,3 +82,5 @@ gulp.task('jest', function () {
         ]
     }));
 });
+
+gulp.task('ci', ['jest']);
