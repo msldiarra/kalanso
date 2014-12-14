@@ -1,8 +1,6 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto);
 
-html, body {height: 100%; padding: 0; margin: 0; font-family: 'Roboto', sans-serif;}
-.layout { height: 100vh; width: 100%; background-color: #fff;}
-
+html, body {height: 100%; padding: 0; margin: 0; font-family: 'Roboto', sans-serif; font-size: 100%;}
 
 /* colors
 
@@ -13,21 +11,78 @@ menu border:
 */
 
 .container-fluid { padding: 0; height: 100%;}
-
-.logo {height: 70px; line-height: 70px; vertical-align: middle; padding-bottom: 20px; width: 100%; padding-left: 20px; color: #4CAF50;}
+.no-padding {padding:0;}
+.logo {height: 70px; line-height: 70px; vertical-align: middle; margin-bottom: 50px; width: 100%; padding-left: 20px; color: #4CAF50;}
 .logo-text {padding-left: 5px;font-weight: bold;}
-.menu { background-color: #f8f8f8; height: 100vh; width:11%; float:left; border-right:2px solid #ececec;}
-.content {background-color: #FFFFF7; height: 100vh; width:88.8%;float: right; }
+.menu { background-color: #f8f8f8; border-right:2px solid #ececec; min-height: 100vh;}
+.content {background-color: #fff;  }
 
-.button {background-color: #4C3D4B;}
+button {
+    font-weight: 500;
+    color: #fff;
+    background-color: #4CAF50;
+    border-color: #1b9848;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+    white-space: normal;
+    padding: 0 1.33333333rem;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 3px;
+    float: none;
+    height: 34px;
+    line-height: 32px;
+}
 
 /** menu
     menu action are centered vertically and horizontally
 **/
-.item {height: 50px; width: 100%; height: 50px;}
-.item .action { width:30%; height: 100%; line-height:50px; float:left; vertical-align: middle; text-align: center; color:#4CAF50;}
-.item .label {
-    float:right; height: 100%; line-height:50px; width:70%; vertical-align: middle;
-    text-align: left;font-size: 16px ;color:#807f83;}
-.item .label:hover {color: #4CAF50; cursor: pointer;}
-.white-text {color:#fff;}
+.menu-item {height: 50px; width: 100%; height: 50px;}
+.menu-item .action { text-align: right; color:#4CAF50;}
+.menu-item .menu-label {vertical-align: middle;text-align: left;font-size: 1.08333333rem;color:#807f83;padding-left:0;}
+.menu-item:hover {cursor: pointer;}
+.menu-item:hover .menu-label:hover {color: #4CAF50; cursor: pointer;}
+
+.title {color:#4CAF50;font-size: 1.5rem;;}
+
+.component {
+    width: 70%; margin: 0 auto;
+    padding:5px 0 10px 10px;
+    margin-top: 50px;
+}
+
+/* Student form styling*/
+textarea, input {
+    outline: none;
+    border:1px solid #ececec;
+    height: 32px; color:#3b3b3b;
+    line-height: 1.46153846;
+    font-size: 1.08333333rem;
+    box-sizing: border-box;
+    padding: .5rem 1rem;
+    border-radius: 2px;
+}
+input.lg, select.lg {width:482px;}
+input.ng {width:241px;}
+
+select {
+    color:#3b3b3b;
+    height: 32px;
+    line-height: 1.46153846;
+    font-size: 1.08333333rem;
+    min-width: 200px;
+    padding: 6px 10px;
+    margin-bottom: 16px;
+    border-radius: 0px;
+    border:1px solid #ececec;
+    background:#fff;
+}
+
+
+select option.grey {color: #ececec !important; text-decoration-color: #ccc;}
+
+
+.photo {border:1px solid #ececec; background: #f8f8f8; height: 151px; line-height: 151px; width: 151px; text-align: center; vertical-align: middle;}
+.photo:hover {cursor: pointer;}
+.margin-bottom-30 {margin-bottom: 30px;}

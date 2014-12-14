@@ -6,40 +6,55 @@ var StudentForm = React.createClass({
 
     render: function() {
 	return (
-      	   <div className="">
+      	   <div className="component">
               <div className="margin-top-30">
-                  <form id="student_form" className="form-horizontal">
-                      <div className="row margin-bottom-20">
-                          <div className="col-xs-6">
-                              <span className="form-title">Nouvel étudiant</span>
+                  <form id="student_form" className="">
+                      <div className="row margin-bottom-30">
+                          <div className="">
+                              <span className="title">Nouvel étudiant</span>
                           </div>
                       </div>
                       <div className="row margin-bottom-30">
-                          <div className="col-xs-6">
-                              <input type="text" className="form-control" placeholder="Prénom" autofocus></input>
+                          <div id="photo" className="photo">
+                              <i className="fa fa-camera-retro"></i>
                           </div>
-                          <div className="col-xs-6">
-                              <input type="text" className="form-control" placeholder="Nom de famille"></input>
+                      </div>
+                      <div className="row margin-bottom-30">
+                          <div className="">
+                              <input type="text" className="lg" placeholder="Nom complet" autofocus></input>
+                          </div>
+                      </div>
+                      <div className="row margin-bottom-30">
+                          <div className="">
+                              <input type="text" className="lg" placeholder="Cursus" ></input>
+                          </div>
+                      </div>
+                      <div className="row margin-bottom-30">
+                          <div className="">
+                              <input type="text" className="lg" placeholder="Date de naissance" ></input>
+                          </div>
+                      </div>
+                      <div className="row margin-bottom-30">
+                          <div className="">
+                              <input type="text" className="lg" placeholder="Lieu de naissance" ></input>
+                          </div>
+                      </div>
+                      <div className="row margin-bottom-30">
+                          <div className="">
+                              <input type="text" className="lg" placeholder="Téléphone" ></input>
+                          </div>
+                      </div>
+                      <div className="row margin-bottom-30">
+                          <div className="">
+                              <input type="text" className="lg" placeholder="Adresse éléctroniqe" ></input>
                           </div>
                       </div>
 
                       <div className="row margin-bottom-30">
-                          <div className="col-xs-6">
-                              <div className="input-group">
-                                <div className="input-group-addon"><i className="fa fa-calendar"></i></div>
-                                <input type="text" className="form-control" placeholder="Date de naissance"></input>
-                              </div>
-                          </div>
-                          <div className="col-xs-6">
-                              <div className="input-group">
-                                  <div className="input-group-addon"><i className="fa fa-map-marker"></i></div>
-                                  <input type="text" className="form-control" placeholder="Lieu de naissance"></input>
-                              </div>
+                          <div className="">
+                              <button type="button" className="">Enregitrer les informations</button>
                           </div>
                       </div>
-
-                      <button type="button" className="btn btn-primary">  ENREGISTRER  </button>
-
                    </form>
 
              </div>

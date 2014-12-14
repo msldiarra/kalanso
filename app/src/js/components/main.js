@@ -1,8 +1,8 @@
 /** @jsx React.DOM */
 var React = require('react'),
-    Students = require('./Students');
+    Application = require('./Application');
 
 React.renderComponent(
-  <Students />,
+  <Application />,
   document.body
 );
