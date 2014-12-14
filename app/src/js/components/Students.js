@@ -1,28 +1,24 @@
 /** @jsx React.DOM */
 
 var React = require('react'),
-    NavigationBar = require('./NavigationBar'),
-    ComponentCard = require('./ComponentCard'),
+    MenuItem = require('./MenuItem'),
     MessageZone = require('./MessageZone'),
     StudentForm = require('./StudentForm');
 
 var Students = React.createClass({
 
     render: function() {
-	return (
-            <div className="">
-                <NavigationBar />
-                <div className="container-fluid">
-                    <div className="components col-md-4">
-                        <ComponentCard />
-                        <ComponentCard />
-                        <ComponentCard />
+	    return (
+            <div className="layout">
+                <div className="menu">
+                    <div className="logo">
+                        <i className="fa fa-building fa-lg"></i> <span className="logo-text">KALANSO</span>
                     </div>
-                    <div className="col-md-8 content">
-                        <div className="" role="main">
-                            <MessageZone />
-                            <StudentForm />
-                        </div>
+                    <MenuItem />
+                </div>
+                <div className="content">
+                    <div className="" role="main">
+
                     </div>
                 </div>
             </div>
