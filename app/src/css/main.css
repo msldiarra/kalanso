@@ -1,6 +1,6 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto);
 
-html, body {height: 100%; padding: 0; margin: 0; font-family: 'Roboto', sans-serif; font-size: 100%;}
+html, body {height: 100%; padding: 0; margin: 0; font-family: 'Roboto', sans-serif; font-size: 100%; min-height: 100vh;}
 
 /* colors
 
@@ -14,8 +14,8 @@ menu border:
 .no-padding {padding:0;}
 .logo {height: 70px; line-height: 70px; vertical-align: middle; margin-bottom: 50px; width: 100%; padding-left: 20px; color: #4CAF50;}
 .logo-text {padding-left: 5px;font-weight: bold;}
-.menu { background-color: #f8f8f8; border-right:2px solid #ececec; min-height: 100vh;}
-.content {background-color: #fff;  }
+.menu { background-color: #f8f8f8; border-right:2px solid #ececec; height: 100vh;}
+.content {background-color: #fff; height: 100vh; }
 
 button {
     font-weight: 500;
